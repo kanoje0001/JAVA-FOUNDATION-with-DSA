@@ -17,14 +17,16 @@ public class LargestNumber {
 
         //@ :- find the largest of three number.
 
-        int max = a;
+//        int max = a;
+//
+//        if (b > max){
+//            max = b;
+//        }
+//        if (c > max){
+//            max = c;
+//        }
 
-        if (b > max){
-            max = b;
-        }
-        if (c > max){
-            max = c;
-        }
+        int max = Math.max(c,Math.max(a,b));
 
         System.out.println(max);
     }
