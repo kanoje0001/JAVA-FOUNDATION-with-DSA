@@ -5,7 +5,7 @@ public class ceiling {
         int[] arr = {2,3,5,9,14,16,18};
         int target = 15;
         int ans = ceiling(arr,target);
-        System.out.println("the index in arrys is" + ans);
+        System.out.println("the index in arrys is " + ans);
     }
 
     //returnning rhe index of smallest number
@@ -19,7 +19,7 @@ public class ceiling {
             if (target < arr[mid]){
                 end = mid - 1;
             } else if (target > arr[mid]) {
-                end = mid + 1;
+                start = mid + 1;
             } else {
                 return mid;
             }
